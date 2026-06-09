@@ -2,7 +2,31 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
+  initSmoothScroll();
 });
+
+/**
+ * Smooth-scroll: ONLY intercepts links whose href is a pure #hash anchor
+ * (e.g. #home, #about, #programs). Any link containing a '/' — including
+ * /school/, /higher-secondary/, /integrated-coaching/, /message/ etc. —
+ * is left completely alone so the browser performs normal page navigation.
+ */
+function initSmoothScroll() {
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    // Only handle pure #hash links — skip everything else
+    if (!href || !href.startsWith('#') || href.includes('/')) return;
+
+    link.addEventListener('click', function(e) {
+      const targetId = href.slice(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
 
 function initHeroSlider() {
   const wrapper = document.getElementById('heroWrapper');
@@ -90,3 +114,4 @@ function initHeroSlider() {
   // Start the autoplay cycle
   startAutoplay();
 }
+
