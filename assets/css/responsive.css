@@ -1,240 +1,734 @@
 /* ── COMPREHENSIVE MOBILE RESPONSIVE ── */
-    @media(max-width:768px) {
+@media(max-width:768px) {
 
-      /* TOPBAR */
-      .topbar .inner { flex-direction: column; gap: 6px; text-align: center; padding: 10px 16px; }
-      .tb-left, .tb-right { flex-wrap: wrap; justify-content: center; gap: 10px; }
-      .social-links { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 8px; }
+  /* TOPBAR */
+  .topbar .inner {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding: 10px 16px;
+  }
 
-      /* NAV */
-      .nav-inner { height: 70px; padding: 0 16px; }
-      .logo-text h1 { font-size: 14px; }
-      .logo-text p { font-size: 9px; }
-      .logo-img { height: 52px !important; width: auto !important; flex-shrink: 0 !important; }
+  .tb-left,
+  .tb-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-      /* HERO */
-      .hero { min-height: 85vh; }
-      .hero-content { padding: 0 16px; gap: 12px; }
-      .hero-tag { font-size: 24px !important; margin-bottom: -5px !important; display: block !important; padding: 0 !important; background: none !important; border: none !important; }
-      .hero-title { font-size: 38px !important; letter-spacing: 0; }
-      .hero-title-sub { font-size: 22px !important; margin-top: 5px !important; }
-      .hero-badges { display: flex; flex-wrap: wrap; gap: 6px; }
-      .hero-badges span { font-size: 11px !important; padding: 4px 10px !important; }
-      .hero-sub { font-size: 14px; }
-      .hero-btns { flex-direction: column; gap: 10px; width: 100%; }
-      .btn-tour { padding: 12px 24px !important; font-size: 13px !important; width: 100% !important; text-align: center !important; }
+  .social-links {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 8px;
+  }
 
-      /* PROGRAMS */
-      .programs-section { margin: 40px 0; }
-      .programs-header h2 { font-size: 24px; }
-      .section-cards { grid-template-columns: 1fr; gap: 16px; padding: 0 16px; }
-      .sc-card { border-radius: 10px; }
-      .sc-body { padding: 16px; }
-      .sc-card h3 { font-size: 18px; }
+  /* NAV */
+  .nav-inner {
+    height: 70px;
+    padding: 0 16px;
+  }
 
-      /* MIDDLE (achievements / performers / notices) */
-      .middle { grid-template-columns: 1fr; gap: 16px; padding: 0 16px; margin-top: 20px; }
-      .achieve-grid { grid-template-columns: repeat(2, 1fr); }
-      .perf-grid { grid-template-columns: repeat(2, 1fr); }
+  .logo-text h1 {
+    font-size: 14px;
+  }
 
-      /* QUICK LINKS */
-      .ql-inner { gap: 12px; padding: 16px; }
-      .ql-item { flex: 1 1 40%; }
+  .logo-text p {
+    font-size: 9px;
+  }
 
-      /* ABOUT SECTION */
-      .about-section { padding: 50px 16px !important; }
-      .about-section h2 { font-size: 26px !important; }
-      .about-section h3 { font-size: 16px !important; }
-      .about-section p { font-size: 14px !important; }
+  .logo-img {
+    height: 52px !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
 
-      /* GALLERY */
-      .gallery-section { padding: 0 16px; margin: 40px auto; }
-      .gallery-header h2 { font-size: 22px; }
+  /* HERO */
+  .hero {
+    min-height: 85vh;
+  }
 
-      /* FOOTER */
-      footer { padding: 30px 16px 16px; }
-      .footer-inner { grid-template-columns: 1fr; gap: 24px; }
-      .footer-brand h2 { font-size: 18px; }
-      .subscribe { flex-direction: column; }
-      .subscribe input, .subscribe button { width: 100%; }
+  .hero-content {
+    padding: 0 16px;
+    gap: 12px;
+  }
 
-      /* OVERLAY PAGES — inner content */
-      .op-content { padding: 20px 16px; margin: 20px 12px; }
-      .op-header { padding: 12px 16px; }
-      .op-title { font-size: 15px; }
+  .hero-tag {
+    font-size: 24px !important;
+    margin-bottom: -5px !important;
+    display: block !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+  }
 
-      /* OVERLAY: all inline-styled large paddings */
-      .subpage-hero { padding: 40px 16px !important; }
-      .subpage-section-lg { padding: 30px 16px !important; }
-      .subpage-section-md { padding: 24px 16px !important; }
-      .subpage-section      { padding: 24px 16px !important; }
-      .subpage-section-sm { padding: 24px 16px !important; }
-      .subpage-card      { padding: 20px 14px !important; }
+  .hero-title {
+    font-size: 38px !important;
+    letter-spacing: 0;
+  }
 
-      /* OVERLAY: flex rows → column */
-      .flex-row { flex-direction: column !important; }
+  .hero-title-sub {
+    font-size: 22px !important;
+    margin-top: 5px !important;
+  }
 
-      /* HEADING SIZES in overlays */
-      .subpage-hero h1 { font-size: 28px !important; }
-      .subpage-section h2 { font-size: 22px !important; }
-      .subpage-card h3 { font-size: 20px !important; }
-      .subpage-section h3 { font-size: 19px !important; }
-      .subpage-card h3 { font-size: 18px !important; }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
 
-      /* RECTOR / PRINCIPAL cards */
-      .profile-name { font-size: 20px !important; }
-      .profile-photo-block { width: 120px !important; height: 150px !important; }
+  .hero-badges span {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+  }
 
-      /* STATS BARS */
-      .stats-row { gap: 16px !important; }
+  .hero-sub {
+    font-size: 14px;
+  }
 
-      /* GRIDS in overlays → single col */
-      .grid-autofit { grid-template-columns: 1fr !important; }
-      .grid-2col         { grid-template-columns: 1fr !important; }
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
-      /* ABHYAAS / why-choose grids */
-      .grid-250 { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
-      .grid-300 { grid-template-columns: 1fr !important; }
-      .grid-200 { grid-template-columns: 1fr 1fr !important; }
+  .btn-tour {
+    padding: 12px 24px !important;
+    font-size: 13px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
 
-      /* stream subject 2-col → 1-col */
-      .subjects-grid { grid-template-columns: 1fr !important; }
-      .subjects-grid-lg { grid-template-columns: 1fr !important; }
-    }
+  /* PROGRAMS */
+  .programs-section {
+    margin: 40px 0;
+  }
 
-    @media(max-width:480px) {
-      .hero-title { font-size: 22px; }
-      .achieve-grid { grid-template-columns: 1fr 1fr; }
-       .grid-200 { grid-template-columns: 1fr !important; }
-      .ql-item { flex: 1 1 100%; }
+  .programs-header h2 {
+    font-size: 24px;
+  }
 
-      /* rector/principal photo block stack */
-      .profile-flex { flex-direction: column !important; align-items: center !important; }
+  .section-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+  }
 
-      /* fix why choose text size on very small screens to fit 2 cols */
-      .about-section .grid-250 span { font-size: 13px !important; line-height: 1.3; }
+  .sc-card {
+    border-radius: 10px;
+  }
 
-      /* hero stat badges */
-      .badge-btn { font-size: 12px !important; padding: 8px 14px !important; }
-    }
+  .sc-body {
+    padding: 16px;
+  }
 
-    /* ── GLOBAL FLUID FIXES ── */
-    *, *::before, *::after { box-sizing: border-box; min-width: 0; }
+  .sc-card h3 {
+    font-size: 18px;
+  }
 
-    .nav-inner, .section-cards, .middle, .footer-inner,
-    .ql-inner, .gallery-section, .gallery-grid,
-    .op-content { max-width: 100%; }
+  /* MIDDLE (achievements / performers / notices) */
+  .middle {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+    margin-top: 20px;
+  }
 
-    @media(max-width:768px) {
-      /* prevent any element from overflowing */
-      section, div:not(.hero-slider-wrapper), header, footer, nav { max-width: 100vw; }
+  .achieve-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      /* topbar */
-      .topbar .inner { flex-direction: column; align-items: center; gap: 6px; padding: 10px 14px; font-size: 12px; }
-      .tb-left, .tb-right { flex-wrap: wrap; justify-content: center; gap: 8px; }
-      .social-links { border-left: none; border-top: 1px solid rgba(255,255,255,.15); padding: 8px 0 0; margin: 0; }
+  .perf-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      /* nav */
-      nav { position: sticky; top: 0; z-index: 100; }
-      .nav-inner { height: 68px; padding: 0 14px; }
-      .logo-text h1 { font-size: 13px; line-height: 1.2; }
-      .logo-text p  { font-size: 9px; }
-      .logo-img { height: 52px !important; width: auto !important; flex-shrink: 0 !important; }
+  /* QUICK LINKS */
+  .ql-inner {
+    gap: 12px;
+    padding: 16px;
+  }
 
-      /* hero */
-      .hero { min-height: 80vh; padding: 0; }
-      .hero-content { padding: 30px 16px; gap: 10px; }
-      .hero-tag { font-size: 20px !important; margin-bottom: -5px !important; display: block !important; padding: 0 !important; background: none !important; border: none !important; }
-      .hero-title { font-size: 30px !important; letter-spacing: 0; }
-      .hero-title-sub { font-size: 18px !important; margin-top: 5px !important; }
-      .hero-badges { display: flex; flex-wrap: wrap; gap: 6px; }
-      .hero-badges span { font-size: 11px !important; padding: 4px 10px !important; }
-      .hero-sub  { font-size: 13px !important; }
-      .hero-btns { flex-direction: column; gap: 10px; width: 100%; }
-      .btn-tour { padding: 12px !important; font-size: 13px !important; width: 100% !important; text-align: center !important; }
+  .ql-item {
+    flex: 1 1 40%;
+  }
 
-      /* programs */
-      .programs-section { margin: 32px 0; }
-      .programs-header { padding: 0 14px; }
-      .programs-header h2 { font-size: 22px; }
-      .programs-header p  { font-size: 13px; }
-      .section-cards { grid-template-columns: 1fr; gap: 14px; padding: 0 14px; }
-      .sc-body { padding: 16px 14px; }
-      .sc-card h3 { font-size: 17px; }
-      .sc-img-placeholder { display: none !important; }
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 50px 16px !important;
+  }
 
-      /* middle section */
-      .middle { grid-template-columns: 1fr; gap: 14px; padding: 0 14px; margin-top: 16px; }
-      .achieve-grid { grid-template-columns: repeat(2, 1fr); }
-      .perf-grid    { grid-template-columns: repeat(2, 1fr); }
-      .ach-num { font-size: 20px; }
+  .about-section h2 {
+    font-size: 26px !important;
+  }
 
-      /* quick links */
-      .ql-inner { gap: 10px; padding: 14px; }
-      .ql-item  { flex: 1 1 44%; }
+  .about-section h3 {
+    font-size: 16px !important;
+  }
 
-      /* about section */
-      .about-section { padding: 40px 14px !important; }
+  .about-section p {
+    font-size: 14px !important;
+  }
 
-      /* gallery */
-      .gallery-section { padding: 0 14px; margin: 36px auto; }
-      .gallery-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      .gallery-header h2 { font-size: 22px; }
+  /* GALLERY */
+  .gallery-section {
+    padding: 0 16px;
+    margin: 40px auto;
+  }
 
-      /* footer */
-      footer { padding: 28px 14px 14px; }
-      .footer-inner { grid-template-columns: 1fr; gap: 20px; }
-      .footer-brand h2 { font-size: 16px; }
-      .subscribe { flex-direction: column; }
-      .subscribe input, .subscribe button { width: 100%; }
+  .gallery-header h2 {
+    font-size: 22px;
+  }
 
-      /* overlay header */
-      .op-header { padding: 10px 14px; }
-      .op-title  { font-size: 14px; }
-      .op-back   { width: 36px; height: 36px; font-size: 18px; }
-      .op-content { padding: 20px 14px; margin: 16px 10px; }
+  /* FOOTER */
+  footer {
+    padding: 30px 16px 16px;
+  }
 
-      /* overlay inner content — scale down large paddings */
-      .overlay-page .subpage-hero { padding: 36px 14px !important; }
-      .overlay-page .subpage-section-lg { padding: 28px 14px !important; }
-      .overlay-page .subpage-section { padding: 22px 14px !important; }
-      .overlay-page .subpage-section-sm { padding: 20px 14px !important; }
-      .overlay-page .subpage-card { padding: 16px 14px !important; }
-      .overlay-page .subpage-card-sm { padding: 16px 14px !important; }
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 
-      /* overlay headings */
-      .overlay-page h1 { font-size: 26px !important; }
-      .overlay-page h2 { font-size: 20px !important; }
-      .overlay-page h3 { font-size: 18px !important; }
-      .overlay-page h4 { font-size: 15px !important; }
+  .footer-brand h2 {
+    font-size: 18px;
+  }
 
-      /* overlay flex rows → col */
-      .overlay-page .op-content > div,
-      .overlay-page .flex-row { flex-direction: column !important; }
+  .subscribe {
+    flex-direction: column;
+  }
 
-      /* auto-fit grids → 1 col */
-      .overlay-page .grid-autofit { grid-template-columns: 1fr !important; }
-      .overlay-page .grid-2col          { grid-template-columns: 1fr !important; }
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
 
-      /* rector/principal photo */
-      .overlay-page .profile-photo-block { width: 110px !important; height: 140px !important; }
+  /* OVERLAY PAGES — inner content */
+  .op-content {
+    padding: 20px 16px;
+    margin: 20px 12px;
+  }
 
-      /* stats row */
-      .overlay-page .stats-row { gap: 12px !important; flex-wrap: wrap !important; }
+  .op-header {
+    padding: 12px 16px;
+  }
 
-      /* index page stats bar to 2 cols */
-      .stats-row { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 16px !important; padding: 20px 16px !important; }
+  .op-title {
+    font-size: 15px;
+  }
 
-      /* coaching hero badges */
-      .overlay-page .badge-btn { font-size: 12px !important; padding: 8px 14px !important; }
-    }
+  /* OVERLAY: all inline-styled large paddings */
+  .subpage-hero {
+    padding: 40px 16px !important;
+  }
 
-    @media(max-width:480px) {
-      .hero-title { font-size: 20px !important; }
-      .achieve-grid { grid-template-columns: 1fr 1fr; }
-      .gallery-grid { grid-template-columns: 1fr; }
-      .ql-item { flex: 1 1 100%; }
-      .overlay-page .grid-200 { grid-template-columns: 1fr !important; }
-      .overlay-page .profile-name { font-size: 18px !important; }
-      .stats-row { grid-template-columns: 1fr !important; gap: 16px !important; }
-    }
+  .subpage-section-lg {
+    padding: 30px 16px !important;
+  }
+
+  .subpage-section-md {
+    padding: 24px 16px !important;
+  }
+
+  .subpage-section {
+    padding: 24px 16px !important;
+  }
+
+  .subpage-section-sm {
+    padding: 24px 16px !important;
+  }
+
+  .subpage-card {
+    padding: 20px 14px !important;
+  }
+
+  /* OVERLAY: flex rows → column */
+  .flex-row {
+    flex-direction: column !important;
+  }
+
+  /* HEADING SIZES in overlays */
+  .subpage-hero h1 {
+    font-size: 28px !important;
+  }
+
+  .subpage-section h2 {
+    font-size: 22px !important;
+  }
+
+  .subpage-card h3 {
+    font-size: 20px !important;
+  }
+
+  .subpage-section h3 {
+    font-size: 19px !important;
+  }
+
+  .subpage-card h3 {
+    font-size: 18px !important;
+  }
+
+  /* RECTOR / PRINCIPAL cards */
+  .profile-name {
+    font-size: 20px !important;
+  }
+
+  .profile-photo-block {
+    width: 120px !important;
+    height: 150px !important;
+  }
+
+  /* STATS BARS */
+  .stats-row {
+    gap: 16px !important;
+  }
+
+  /* GRIDS in overlays → single col */
+  .grid-autofit {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ABHYAAS / why-choose grids */
+  .grid-250 {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  .grid-300 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-200 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* stream subject 2-col → 1-col */
+  .subjects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .subjects-grid-lg {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media(max-width:480px) {
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .achieve-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-200 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ql-item {
+    flex: 1 1 100%;
+  }
+
+  /* rector/principal photo block stack */
+  .profile-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* fix why choose text size on very small screens to fit 2 cols */
+  .about-section .grid-250 span {
+    font-size: 13px !important;
+    line-height: 1.3;
+  }
+
+  /* hero stat badges */
+  .badge-btn {
+    font-size: 12px !important;
+    padding: 8px 14px !important;
+  }
+}
+
+/* ── GLOBAL FLUID FIXES ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.nav-inner,
+.section-cards,
+.middle,
+.footer-inner,
+.ql-inner,
+.gallery-section,
+.gallery-grid,
+.op-content {
+  max-width: 100%;
+}
+
+@media(max-width:768px) {
+
+  /* prevent any element from overflowing */
+  section,
+  div:not(.hero-slider-wrapper),
+  header,
+  footer,
+  nav {
+    max-width: 100vw;
+  }
+
+  /* topbar */
+  .topbar .inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .tb-left,
+  .tb-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .social-links {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    padding: 8px 0 0;
+    margin: 0;
+  }
+
+  /* nav */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-inner {
+    height: 68px;
+    padding: 0 14px;
+  }
+
+  .logo-text h1 {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .logo-text p {
+    font-size: 9px;
+  }
+
+  .logo-img {
+    height: 52px !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* hero */
+  .hero {
+    min-height: 80vh;
+    padding: 0;
+  }
+
+  .hero-content {
+    padding: 30px 16px;
+    gap: 10px;
+  }
+
+  .hero-tag {
+    font-size: 20px !important;
+    margin-bottom: -5px !important;
+    display: block !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+  }
+
+  .hero-title {
+    font-size: 30px !important;
+    letter-spacing: 0;
+  }
+
+  .hero-title-sub {
+    font-size: 18px !important;
+    margin-top: 5px !important;
+  }
+
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .hero-badges span {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+  }
+
+  .hero-sub {
+    font-size: 13px !important;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn-tour {
+    padding: 12px !important;
+    font-size: 13px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* programs */
+  .programs-section {
+    margin: 32px 0;
+  }
+
+  .programs-header {
+    padding: 0 14px;
+  }
+
+  .programs-header h2 {
+    font-size: 22px;
+  }
+
+  .programs-header p {
+    font-size: 13px;
+  }
+
+  .section-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 14px;
+  }
+
+  .sc-body {
+    padding: 16px 14px;
+  }
+
+  .sc-card h3 {
+    font-size: 17px;
+  }
+
+  .sc-img-placeholder {
+    display: none !important;
+  }
+
+  /* middle section */
+  .middle {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 14px;
+    margin-top: 16px;
+  }
+
+  .achieve-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perf-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ach-num {
+    font-size: 20px;
+  }
+
+  /* quick links */
+  .ql-inner {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .ql-item {
+    flex: 1 1 44%;
+  }
+
+  /* about section */
+  .about-section {
+    padding: 40px 14px !important;
+  }
+
+  /* gallery */
+  .gallery-section {
+    padding: 0 14px;
+    margin: 36px auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .gallery-header h2 {
+    font-size: 22px;
+  }
+
+  /* footer */
+  footer {
+    padding: 28px 14px 14px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-brand h2 {
+    font-size: 16px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+  }
+
+  /* overlay header */
+  .op-header {
+    padding: 10px 14px;
+  }
+
+  .op-title {
+    font-size: 14px;
+  }
+
+  .op-back {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .op-content {
+    padding: 20px 14px;
+    margin: 16px 10px;
+  }
+
+  /* overlay inner content — scale down large paddings */
+  .overlay-page .subpage-hero {
+    padding: 36px 14px !important;
+  }
+
+  .overlay-page .subpage-section-lg {
+    padding: 28px 14px !important;
+  }
+
+  .overlay-page .subpage-section {
+    padding: 22px 14px !important;
+  }
+
+  .overlay-page .subpage-section-sm {
+    padding: 20px 14px !important;
+  }
+
+  .overlay-page .subpage-card {
+    padding: 16px 14px !important;
+  }
+
+  .overlay-page .subpage-card-sm {
+    padding: 16px 14px !important;
+  }
+
+  /* overlay headings */
+  .overlay-page h1 {
+    font-size: 26px !important;
+  }
+
+  .overlay-page h2 {
+    font-size: 20px !important;
+  }
+
+  .overlay-page h3 {
+    font-size: 18px !important;
+  }
+
+  .overlay-page h4 {
+    font-size: 15px !important;
+  }
+
+  /* overlay flex rows → col */
+  .overlay-page .op-content>div,
+  .overlay-page .flex-row {
+    flex-direction: column !important;
+  }
+
+  /* auto-fit grids → 1 col */
+  .overlay-page .grid-autofit {
+    grid-template-columns: 1fr !important;
+  }
+
+  .overlay-page .grid-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* rector/principal photo */
+  .overlay-page .profile-photo-block {
+    width: 110px !important;
+    height: 140px !important;
+  }
+
+  /* stats row */
+  .overlay-page .stats-row {
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* index page stats bar to 2 cols */
+  .stats-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+    padding: 20px 16px !important;
+  }
+
+  /* coaching hero badges */
+  .overlay-page .badge-btn {
+    font-size: 12px !important;
+    padding: 8px 14px !important;
+  }
+}
+
+@media(max-width:480px) {
+  .hero-title {
+    font-size: 20px !important;
+  }
+
+  .achieve-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ql-item {
+    flex: 1 1 100%;
+  }
+
+  .overlay-page .grid-200 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .overlay-page .profile-name {
+    font-size: 18px !important;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
