@@ -77,6 +77,8 @@
     @media(max-width:900px) {
       .logo-img {
         height: 65px;
+        width: auto;
+        object-fit: contain;
       }
 
       .logo-text h1 {
