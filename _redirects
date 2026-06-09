@@ -1,0 +1,34 @@
+# Redirects for School Section
+/pages/school                  /school/                  301
+/pages/school.html             /school/                  301
+/school.html                   /school/                  301
+
+# Redirects for Higher Secondary
+/pages/higher-secondary        /higher-secondary/        301
+/pages/higher-secondary.html   /higher-secondary/        301
+/higher-secondary.html         /higher-secondary/        301
+
+# Redirects for Integrated Coaching
+/pages/integrated-coaching     /integrated-coaching/     301
+/pages/integrated-coaching.html /integrated-coaching/    301
+/integrated-coaching.html      /integrated-coaching/     301
+
+# Redirects for Message
+/pages/message                 /message/                 301
+/pages/message.html            /message/                 301
+/message.html                  /message/                 301
+
+# Redirects for Results
+/pages/results                 /results/                 301
+/pages/results.html            /results/                 301
+/results.html                  /results/                 301
+
+# Redirects for Student Zone
+/pages/student-zone            /student-zone/            301
+/pages/student-zone.html       /student-zone/            301
+/student-zone.html             /student-zone/            301
+
+# Redirects for Gallery
+/pages/gallery                 /gallery/                 301
+/pages/gallery.html            /gallery/                 301
+/gallery.html                  /gallery/                 301
