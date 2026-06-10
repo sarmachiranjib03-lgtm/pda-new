@@ -30,14 +30,21 @@ document.addEventListener('DOMContentLoaded', function() {
   var isHomePage = document.body.classList.contains('is-home');
 
   if (isHomePage) {
+    var rafPending = false;
+
     var handleScroll = function() {
-      if (window.scrollY > 50) {
-        navbar.classList.add('nav-scrolled');
-      } else {
-        navbar.classList.remove('nav-scrolled');
-      }
+      if (rafPending) return;
+      rafPending = true;
+      window.requestAnimationFrame(function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('nav-scrolled');
+        } else {
+          navbar.classList.remove('nav-scrolled');
+        }
+        rafPending = false;
+      });
     };
-    
+
     // Check initial state (if page loaded/reloaded already scrolled)
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
