@@ -10,5 +10,8 @@
 /assets/images/*.png
   Cache-Control: public, max-age=31536000, immutable
 
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
 /*.html
   Cache-Control: no-cache
